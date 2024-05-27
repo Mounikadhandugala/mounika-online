@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <title>shopper.</title>
     <style>
         header{
@@ -106,7 +106,7 @@
         section{
             margin-top: 20px;
         }
-        main{
+        .img{
             height: 450px;
             display: grid;
             grid-template-columns: 4fr 4fr 4fr;
@@ -162,6 +162,299 @@
             padding: 20px;
             font-weight: bold;
         }
+        .offer{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            
+        }
+        .offer div{
+            color: green;
+        }
+        .offers{
+            color: black;
+        }
+        .collection{
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .collection-title{
+            color: gray;
+            font-size: 20px;
+            margin-top: 50px;
+        }
+        .year{
+            font-weight: bold;
+            font-size: 50px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .pic{
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            height: 400px;
+        }
+        .bag{
+            background-image: url("images/bag-collection.jpg");
+            background-size: cover;
+            margin: 15px;
+            text-align: center;
+            padding-top: 100px;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .shirt{
+            background-image: url("images/printed-shirt.jpg");
+            background-size: cover;
+            margin: 15px;
+            text-align: left;
+            padding-top: 100px;
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+            padding-left: 40px;
+        }
+        .sh{
+            font-size: 15px;
+        }
+        .bag:hover{
+            transform: translate(5px);
+        }
+        .shirt:hover{
+            transform: translate(5px);
+        }
+        .skirt{
+            background-image: url("images/skirt.jpg");
+            background-size: cover;
+            margin: 15px;
+            padding-top: 100px;
+            padding-left: 80px;
+            font-size: 25px;
+            font-weight: bold;
+           
+            
+        }
+        .sweatshirt{
+            background-image: url("images/sweatshirt.jpg");
+            background-size: cover;
+            margin: 15px;
+            font-size: 25px;
+            padding-left: 80px;
+            padding-top: 100px;
+            font-weight: bold;
+            
+            
+            
+        }
+        .pics{
+            height: 400px;
+            display: grid;
+            grid-template-columns: 8fr 4fr;
+            margin-bottom: 10px;
+           
+        }
+        .skirt:hover{
+            transform: translate(5px);
+        }
+        .sweatshirt:hover{
+            transform: translate(5px);    
+        }
+        .top{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+        .bottom{
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .img-top{
+            height: 400px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+        .women-shoe{
+            background-image: url("images/women-shoe.jpg");
+            background-size: cover;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: end; 
+            overflow: hidden;  
+        }
+        .women-shoe .short-cuts{
+            transform: translateY(50px);
+            transition: 500ms;
+
+        }
+        .women-shoe:hover .short-cuts{
+            transform: translateY(-20px);
+            transition: 500ms;
+        }
+        .short-cuts span {
+            display: inline-flex;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: white;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        .short-cuts span:hover {
+            background-color: red;
+            color:white;
+        }
+        .floral-print{
+            background-image: url("images/floral-print.jpg");
+            background-size: cover;
+            margin: 15px; 
+            display: flex;
+            justify-content: center;
+            align-items: end; 
+            overflow: hidden;
+            
+
+        }
+        .floral-print .short-cuts{
+            transform: translateY(50px);
+            transition: 500ms;
+        }
+        .floral-print:hover .short-cuts{
+            transform: translateY(-20px);
+            transition: 500ms;
+        }
+
+        .men-shoe{
+            background-image: url("images/mens-shoe.jpg");
+            background-size: cover;
+            margin: 15px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            overflow: hidden;
+               
+        }
+        .men-shoe .short-cuts{
+            transform: translateY(50px);
+            transition: 500ms;
+        }
+        .men-shoe:hover .short-cuts{
+            transform: translateY(-20px);
+            transition: 500ms;
+        }
+        .crop-top{
+            background-image: url("images/crop-top.jpg");
+            background-size: cover;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            overflow: hidden;
+            
+        }
+        .crop-top .short-cuts{
+            transform: translateY(50px);
+            transition: 500ms;
+        }
+        .crop-top:hover .short-cuts{
+            transform: translateY(-20px);
+            transition: 500ms;
+        }
+        .below-title{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            padding-left: 20px;
+            padding-bottom: 50px;
+        }
+        .bottom-img{
+            height: 400px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+
+        }
+        .floral-midi{
+            background-image: url("images/floral-midi.jpg");
+            background-size: cover;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            overflow: hidden;
+        }
+        .floral-midi .short-cuts{
+            transform: translateY(50px);
+            transition: 500ms;
+        }
+        .floral-midi:hover .short-cuts{
+            transform: translateY(-30px);
+            transition: 500ms;
+        }
+        
+        .cross-bag{
+            background-image: url("images/body-cross-bag.jpg");
+            background-size: cover;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            overflow: hidden;
+        }
+        .cross-bag .short-cuts{
+            transform: translateY(50px);
+            transition: 500ms;
+        }
+        .cross-bag:hover .short-cuts{
+            transform: translateY(-30px);
+            transition: 500ms;
+        }  
+        .a-line-skirt{
+            background-image: url("images/a-line-skirt.jpg");
+            background-size: cover;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            overflow: hidden;
+        }
+        .a-line-skirt  .short-cuts{
+            transform: translateY(50px);
+            transition: 500ms;
+        }
+        .a-line-skirt:hover .short-cuts{
+            transform: translateY(-30px);
+            transition: 500ms;
+        }  
+        .heels{
+            background-image: url("images/cross-stripped-heel.jpg");
+            background-size: cover;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            overflow: hidden;
+        }
+        .heels  .short-cuts{
+            transform: translateY(50px);
+            transition: 500ms;
+        }
+        .heels:hover .short-cuts{
+            transform: translateY(-30px);
+            transition: 500ms;
+        }  
+        .more{
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+            
+           
+        }
+        
+        
        
         
     </style>
@@ -198,29 +491,219 @@
     </article>
     <section>
         <main>
-            <div class="women-fashion">
-                <div class="fashion-title">Women</div>
-                <div class="btn-shop">
-                    <span>shop women</span>
-                    <span class="bi bi-arrow-right"></span>
-
-                </div>                   
-            </div>
-
-
-            <div class="men-fashion">
-                <div class="fashion-title">Men</div>
-                <div class="btn-shop">
-                    <span>shop men</span>
-                    <span class="bi bi-arrow-right"></span>
+            <div class="img">
+                <div class="women-fashion">
+                    <div class="fashion-title">Women</div>
+                    <div class="btn-shop">
+                        <span>shop women</span>
+                        <span class="bi bi-arrow-right"></span>
+    
+                    </div>                   
+                </div>
+    
+    
+                <div class="men-fashion">
+                    <div class="fashion-title">Men</div>
+                    <div class="btn-shop">
+                        <span>shop men</span>
+                        <span class="bi bi-arrow-right"></span>
+                    </div>
+                </div>
+                <div class="Kid-fashion">
+                    <div class="fashion-title">Kids</div>
+                    <div class="btn-shop">
+                        <span>shop kid</span>
+                        <span class="bi bi-arrow-right"></span>
+                    </div>    
                 </div>
             </div>
-            <div class="Kid-fashion">
-                <div class="fashion-title">Kids</div>
-                <div class="btn-shop">
-                    <span>shop kid</span>
-                    <span class="bi bi-arrow-right"></span>
-                </div>    
+            <div class="offer">
+                <div class="bi bi-truck"><span class="offers"><b>FREE SHIPPING</b><br>From all orders over $100</span>
+                    
+                </div>
+            
+                  
+                <div class="bi bi-arrow-left-right">
+                    <span class="offers"><b>FREE RETURNS</b><br>
+                        Return money within 30 days
+
+                    </span>
+                </div>        
+
+            
+            
+                <div class="bi bi-lock">
+                    <span class="offers"><b>SECURE SHOPPING</b><br>
+                        You're in safe hands
+
+                    </span>
+
+                </div>
+              
+                <div class="bi bi-tag">
+                    <span class="offers"><b>OVER 10,000 STYLES</b><br>
+                        We have everything you need
+
+                    </span>
+
+                </div>
+            </div>
+            <hr>
+            <div class="collection">
+                <div class="collection-title">New collection</div>
+                <div class="year">Best Picks 2019</div>
+                <div class="sub-title">Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,<br> above fly brought Very green.</div>
+            </div>
+            <div class="pic">
+               <div class="bag">
+                    <div class="bg">Bag collection</div>
+                    <div class="sh">Shop now <span class="bi bi-arrow-right"></span></div>
+               </div>
+               <div class="shirt">
+                    <div>Printed men's shirts</div>
+                    <div class="sh">Shop now <span class="bi bi-arrow-right"></span></div>
+               </div>
+
+            </div>
+            <div class="pics">
+                <div class="skirt">
+                    <div><b>Basic women's dressess</b></div>
+                    <div class="sh">Shop now <span class="bi bi-arrow-right"></span></div>
+
+                </div>
+                <div class="sweatshirt">
+                    <div><b>Sweatshirt</b></div>
+                    <div class="sh">Shop now <span class="bi bi-arrow-right"></span></div>
+
+                </div>
+            </div>
+            <div>
+                <div class="top">Top month Sellers</div>
+                <div class="bottom">Women &nbsp;&nbsp; men &nbsp;&nbsp; kid</div>
+            </div>
+            <div class="img-top">
+                <div class="women-shoe">
+                    <div class="short-cuts">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-cart"></span>
+                        <span class="bi bi-heart"></span>
+                    </div>
+
+                </div>
+                <div class="floral-print">
+                    <div class="short-cuts">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-cart"></span>
+                        <span class="bi bi-heart"></span>
+                    </div>
+                    
+                </div>
+                <div class="men-shoe">
+                    <div class="short-cuts">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-cart"></span>
+                        <span class="bi bi-heart"></span>
+                    </div>
+                    
+                </div>
+                <div class="crop-top">
+                    <div class="short-cuts">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-cart"></span>
+                        <span class="bi bi-heart"></span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div  class="below-title">
+                <div>
+                    Shoes<br>
+                    <b>Leather mid-heel Sandals</b><br>
+                    $129.00
+                </div>
+                <div>
+                    Dresses<br>
+                    <b>Cotton floral print Dress</b><br>
+                    $40.00  
+                </div>
+                <div>
+                    Shoes<br>
+                    <b>Leather Sneakers</b><br>
+                    $85.00
+                </div>
+                <div>
+                    Tops<br>
+                    <b>Cropped cotton Top</b><br>
+                    $29.00
+                </div>
+            </div>
+            <div class="bottom-img">
+                <div class="floral-midi">
+                    <div class="short-cuts">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-cart"></span>
+                        <span class="bi bi-heart"></span>
+
+                    </div>
+
+                </div>
+                <div class="cross-bag">
+                    <div class="short-cuts">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-cart"></span>
+                        <span class="bi bi-heart"></span>
+
+                    </div>
+
+
+                </div>
+                <div class="a-line-skirt">
+                    <div class="short-cuts">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-cart"></span>
+                        <span class="bi bi-heart"></span>
+
+                    </div>
+
+
+                </div>
+                <div class="heels">
+                    <div class="short-cuts">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-cart"></span>
+                        <span class="bi bi-heart"></span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="below-title">
+                <div>
+                    Dresses<br>
+                    <b>Floral print midi Dress</b><br>
+                    $50.00
+                </div> 
+                <div>
+                    Bags<br>
+                    <b>Suede cross body Bag</b><br>
+                    $49.00
+                </div>
+                <div>
+                    Skirts<br>
+                    <b>Printed A-line Skirt</b><br>
+                    $79.00
+                </div>
+                <div>
+                    Shoes<br>
+                    <b>Heel strappy Sandals</b><br>
+                    $90.00
+                </div>
+
+            </div>
+            <div>
+                <u><div class="more">Discover More</div></u>
             </div>
         </main>
         
